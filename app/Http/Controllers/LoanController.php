@@ -3123,7 +3123,7 @@ class LoanController extends Controller
             Flash::warning(trans('general.permission_denied'));
             return redirect('/');
         }
-
+        // dd($request);
         return view('loan_calculator/show',
             compact('request'));
     }
